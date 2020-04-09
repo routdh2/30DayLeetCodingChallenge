@@ -9,13 +9,11 @@ class Solution:
                     r1.pop()
             else:
                 r1.append(char)
-        print(r1)
         for char in T:
             if char=="#":
                 if len(r2)!=0:
                     r2.pop()
             else:
                 r2.append(char)
-        print(r2)
         return r1==r2
         
