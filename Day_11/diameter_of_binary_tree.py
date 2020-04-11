@@ -9,13 +9,7 @@
 class Solution:
     diameter=0
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        if root==None:
-            return 0
-        l_height=self.find_height(root.left)
-        r_height=self.find_height(root.right)
-        total=l_height+r_height
-        if total > self.diameter:
-            self.diameter=total
+        self.find_height(root)
         return self.diameter
     
     def find_height(self,root):
